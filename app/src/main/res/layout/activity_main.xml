@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:hardwareAccelerated="false"
+    tools:context="com.app.lenovo.gestures.MainActivity">
+   <!-- <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:background="@drawable/spacee"/>-->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/title"
+        android:id="@+id/images"/>
+    <!--<com.app.lenovo.gestures.CustomGifView
+        android:id="@+id/gifview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />-->
+    <android.gesture.GestureOverlayView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/gestures_overlay"
+        android:layout_centerInParent="true">
+        <FrameLayout android:layout_height="500dp" android:layout_width="300dp" android:id="@+id/frame"
+            android:layout_gravity="center"> </FrameLayout>
+
+    </android.gesture.GestureOverlayView>
+</RelativeLayout>
